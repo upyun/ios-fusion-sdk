@@ -26,16 +26,6 @@
 
 - (IBAction)uploadAction:(id)sender {
     [_pv setProgress:0.0];
-    [UPYUNConfig sharedInstance].DEFAULT_BUCKET = @"test654123";
-    [UPYUNConfig sharedInstance].DEFAULT_PASSCODE = @"0/8/1gPFWUQWGcfjFn6Vsn3VWDc=";
-    
-    [UPYUNConfig sharedInstance].thirdUpload = kAliyunUPload;
-    
-    [UPYUNConfig sharedInstance].QiniuToken = @"BNvUvcoS4ha7XA3l_WE6YF-6jfsofvDDbbzfCfkm:YdL_Gi0hyXyypcEfjJGt0_k1fLs=:eyJzY29wZSI6Imxpbmtub3dlYXN5IiwiZGVhZGxpbmUiOjE0NTc1MTYwMDh9";
-    
-    [UPYUNConfig sharedInstance].AliyunBucket = @"linknoweasy";
-    [UPYUNConfig sharedInstance].AliyunAccessKey = @"sQJmf3w88TKzFPyA";
-    [UPYUNConfig sharedInstance].AliyunSecretKey = @"i0bOtLNWJHzlC5WRJGuPG72FMsvLkB";
     
     __block UpYun *uy = [[UpYun alloc] init];
     uy.successBlocker = ^(NSURLResponse *response, id responseData) {

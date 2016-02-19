@@ -1,5 +1,5 @@
 # UPYUN Fusion iOS SDK
-[![Build Status](https://travis-ci.org/upyun/ios-sdk.svg?branch=master)](https://travis-ci.org/upyun/ios-sdk)
+
 
 UPYUN Fusion iOS SDK, 集成:
 - [又拍云存储 表单 API接口](http://docs.upyun.com/api/form_api/) 
@@ -19,7 +19,7 @@ UPYUN Fusion iOS SDK, 集成:
 
 
 ## 参数设置
-在 `UPYUNConfig.m` 中可以对 SDK 的一些参数进行配置, 通过 CocoaPods 引用的可以通过 ``` [UPYUNConfig sharedInstance].DEFAULT_BUCKET ``` 来进行修改
+在 `UPYUNConfig.m` 中可以对 SDK 的一些参数进行配置, 也可以通过 ``` [UPYUNConfig sharedInstance].DEFAULT_BUCKET ``` 来进行修改
 
 * `DEFAULT_BUCKET` : 默认空间名（必填项）, 
 * `DEFAULT_PASSCODE` : 默认表单 API 功能密钥 , 用户从服务端获取 `signature` 则无须填写
@@ -94,7 +94,7 @@ uy.uploadMethod = UPFormUpload;
 * 回调中的参数：
   * `error`: 失败后返回的错误信息
 
-#### 5、`progressBlocker` 上传进度度回调
+#### 5、`progressBlocker` 上传进度回调
 * 回调中的参数：
   * `percent`: 上传进度的百分比
   * `requestDidSendBytes`: 已经发送的数据量
@@ -108,7 +108,7 @@ uy.uploadMethod = UPFormUpload;
 #### 7、`params` [可选参数](http://docs.upyun.com/api/form_api/#api_1)
 
 #### 8、`uploadMethod` 上传方法选择
-* 默认根据文件大小选择表单还是分块上传, 可以通过 `uy.uploadMethod = UPFormUpload` 来选择表单上传, `uy.uploadMethod = UPMUtUPload` 来选择分开上传.
+* 默认根据文件大小选择表单还是分块上传, 可以通过 `uy.uploadMethod = UPFormUpload` 来选择表单上传, `uy.uploadMethod = UPMUtUPload` 来选择分块上传.
 
 
 
