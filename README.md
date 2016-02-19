@@ -16,7 +16,7 @@ UPYUN Fusion iOS SDK, 集成:
 1.直接下载, 引入 `UPYUNSDK` 文件夹, 然后 CocoaPods  
         ```pod 'AliyunOSSiOS', '~> 2.2.0'``` , 之后 `#import "UpYun.h"` 即可使用
         
-2. 使用cocoapods,  ```pod 'UPYUNFusion', '~> 1.0.0''```, 之后 `#import "UpYun.h"` 即可使用
+2.使用cocoapods,  ```pod 'UPYUNFusion', '~> 1.0.0''```, 之后 `#import "UpYun.h"` 即可使用
 >注: 该项目依赖 AliyunOSSiOS
 
 
