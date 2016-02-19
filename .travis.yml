@@ -4,6 +4,6 @@
 #xctool test -project UpYunSDKDemo/UpYunSDKDemo.xcodeproj -scheme UpYunSDKDemo -sdk iphonesimulator -destination platform='iOS Simulator',OS=9.2,name='iPhone 5s' ONLY_ACTIVE_ARCH=NO
 
 language: objective-c
-xcode_project: UpYunFusionSDKDemo.xcworkspace # path to your xcodeproj folder
+xcode_workspace: UpYunFusionSDKDemo.xcworkspace # path to your xcodeproj folder
 xcode_scheme: UpYunFusionSDKDemo
 xcode_sdk: iphonesimulator7.0
