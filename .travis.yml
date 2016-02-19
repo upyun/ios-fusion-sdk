@@ -7,3 +7,4 @@ language: objective-c
 xcode_project: UpYunFusionSDKDemo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: UpYunFusionSDKDemo
 xcode_sdk: iphonesimulator7.0
+podfile: Podfile
