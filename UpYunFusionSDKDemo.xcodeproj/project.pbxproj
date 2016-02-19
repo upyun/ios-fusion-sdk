@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89330D9F60C9C8233A1B4B58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF367AE5128B055C7921A27C /* libPods.a */; };
+		AE4AA31C1C76F1DA00795B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA31B1C76F1DA00795B27 /* main.m */; };
+		AE4AA31F1C76F1DA00795B27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */; };
+		AE4AA3221C76F1DA00795B27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3211C76F1DA00795B27 /* ViewController.m */; };
+		AE4AA3251C76F1DA00795B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3231C76F1DA00795B27 /* Main.storyboard */; };
+		AE4AA3271C76F1DA00795B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3261C76F1DA00795B27 /* Assets.xcassets */; };
+		AE4AA32A1C76F1DA00795B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */; };
+		AE4AA3381C76F33500795B27 /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3351C76F33500795B27 /* UpYun.m */; };
+		AE4AA3391C76F33500795B27 /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3371C76F33500795B27 /* UPYUNConfig.m */; };
+		AE4AA3451C76F35200795B27 /* AliyunUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA33C1C76F35200795B27 /* AliyunUpload.m */; };
+		AE4AA3461C76F35200795B27 /* QiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA33E1C76F35200795B27 /* QiniuUpload.m */; };
+		AE4AA3471C76F35200795B27 /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */; };
+		AE4AA3481C76F35200795B27 /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3421C76F35200795B27 /* UPHTTPClient.m */; };
+		AE4AA3491C76F35200795B27 /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3441C76F35200795B27 /* UPMultipartBody.m */; };
+		AE4AA34C1C76F35D00795B27 /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */; };
+		AE4AA3511C76F36400795B27 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */; };
+		AE4AA3521C76F36400795B27 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3501C76F36400795B27 /* NSString+NSHash.m */; };
+		AE4AA3541C76F3D300795B27 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3531C76F3D300795B27 /* image.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4AA3171C76F1DA00795B27 /* UpYunFusionSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpYunFusionSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4AA31B1C76F1DA00795B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE4AA31D1C76F1DA00795B27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE4AA3201C76F1DA00795B27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE4AA3211C76F1DA00795B27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE4AA3241C76F1DA00795B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE4AA3261C76F1DA00795B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE4AA3291C76F1DA00795B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE4AA32B1C76F1DA00795B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4AA3341C76F33500795B27 /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpYun.h; path = UpYunSDK/UpYun.h; sourceTree = "<group>"; };
+		AE4AA3351C76F33500795B27 /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpYun.m; path = UpYunSDK/UpYun.m; sourceTree = "<group>"; };
+		AE4AA3361C76F33500795B27 /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPYUNConfig.h; path = UpYunSDK/UPYUNConfig.h; sourceTree = "<group>"; };
+		AE4AA3371C76F33500795B27 /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPYUNConfig.m; path = UpYunSDK/UPYUNConfig.m; sourceTree = "<group>"; };
+		AE4AA33B1C76F35200795B27 /* AliyunUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AliyunUpload.h; path = UpYunSDK/Utils/AliyunUpload.h; sourceTree = "<group>"; };
+		AE4AA33C1C76F35200795B27 /* AliyunUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AliyunUpload.m; path = UpYunSDK/Utils/AliyunUpload.m; sourceTree = "<group>"; };
+		AE4AA33D1C76F35200795B27 /* QiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUpload.h; path = UpYunSDK/Utils/QiniuUpload.h; sourceTree = "<group>"; };
+		AE4AA33E1C76F35200795B27 /* QiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QiniuUpload.m; path = UpYunSDK/Utils/QiniuUpload.m; sourceTree = "<group>"; };
+		AE4AA33F1C76F35200795B27 /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPBodyPart.h; path = UpYunSDK/Utils/UPHTTPBodyPart.h; sourceTree = "<group>"; };
+		AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPBodyPart.m; path = UpYunSDK/Utils/UPHTTPBodyPart.m; sourceTree = "<group>"; };
+		AE4AA3411C76F35200795B27 /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPClient.h; path = UpYunSDK/Utils/UPHTTPClient.h; sourceTree = "<group>"; };
+		AE4AA3421C76F35200795B27 /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPClient.m; path = UpYunSDK/Utils/UPHTTPClient.m; sourceTree = "<group>"; };
+		AE4AA3431C76F35200795B27 /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMultipartBody.h; path = UpYunSDK/Utils/UPMultipartBody.h; sourceTree = "<group>"; };
+		AE4AA3441C76F35200795B27 /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMultipartBody.m; path = UpYunSDK/Utils/UPMultipartBody.m; sourceTree = "<group>"; };
+		AE4AA34A1C76F35D00795B27 /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMutUploaderManager.h; path = UpYunSDK/Utils/UPMutUpload/UPMutUploaderManager.h; sourceTree = "<group>"; };
+		AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMutUploaderManager.m; path = UpYunSDK/Utils/UPMutUpload/UPMutUploaderManager.m; sourceTree = "<group>"; };
+		AE4AA34D1C76F36400795B27 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MD5Digest.h"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MD5Digest.m"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		AE4AA34F1C76F36400795B27 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NSHash.h"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSString+NSHash.h"; sourceTree = "<group>"; };
+		AE4AA3501C76F36400795B27 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NSHash.m"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSString+NSHash.m"; sourceTree = "<group>"; };
+		AE4AA3531C76F3D300795B27 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		AF367AE5128B055C7921A27C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4AA3141C76F1DA00795B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89330D9F60C9C8233A1B4B58 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F16445A52A980317628625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF367AE5128B055C7921A27C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30F9A84D269CB41EDF7980BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */,
+				B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE4AA30E1C76F1DA00795B27 = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3191C76F1DA00795B27 /* UpYunFusionSDKDemo */,
+				AE4AA3181C76F1DA00795B27 /* Products */,
+				30F9A84D269CB41EDF7980BE /* Pods */,
+				00F16445A52A980317628625 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4AA3181C76F1DA00795B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3171C76F1DA00795B27 /* UpYunFusionSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4AA3191C76F1DA00795B27 /* UpYunFusionSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3331C76F30500795B27 /* UpYunSDK */,
+				AE4AA31D1C76F1DA00795B27 /* AppDelegate.h */,
+				AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */,
+				AE4AA3201C76F1DA00795B27 /* ViewController.h */,
+				AE4AA3211C76F1DA00795B27 /* ViewController.m */,
+				AE4AA3231C76F1DA00795B27 /* Main.storyboard */,
+				AE4AA3261C76F1DA00795B27 /* Assets.xcassets */,
+				AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */,
+				AE4AA32B1C76F1DA00795B27 /* Info.plist */,
+				AE4AA31A1C76F1DA00795B27 /* Supporting Files */,
+			);
+			path = UpYunFusionSDKDemo;
+			sourceTree = "<group>";
+		};
+		AE4AA31A1C76F1DA00795B27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3531C76F3D300795B27 /* image.jpg */,
+				AE4AA31B1C76F1DA00795B27 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE4AA3331C76F30500795B27 /* UpYunSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA33A1C76F33800795B27 /* Utils */,
+				AE4AA3341C76F33500795B27 /* UpYun.h */,
+				AE4AA3351C76F33500795B27 /* UpYun.m */,
+				AE4AA3361C76F33500795B27 /* UPYUNConfig.h */,
+				AE4AA3371C76F33500795B27 /* UPYUNConfig.m */,
+			);
+			name = UpYunSDK;
+			sourceTree = "<group>";
+		};
+		AE4AA33A1C76F33800795B27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA34D1C76F36400795B27 /* NSData+MD5Digest.h */,
+				AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */,
+				AE4AA34F1C76F36400795B27 /* NSString+NSHash.h */,
+				AE4AA3501C76F36400795B27 /* NSString+NSHash.m */,
+				AE4AA34A1C76F35D00795B27 /* UPMutUploaderManager.h */,
+				AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */,
+				AE4AA33B1C76F35200795B27 /* AliyunUpload.h */,
+				AE4AA33C1C76F35200795B27 /* AliyunUpload.m */,
+				AE4AA33D1C76F35200795B27 /* QiniuUpload.h */,
+				AE4AA33E1C76F35200795B27 /* QiniuUpload.m */,
+				AE4AA33F1C76F35200795B27 /* UPHTTPBodyPart.h */,
+				AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */,
+				AE4AA3411C76F35200795B27 /* UPHTTPClient.h */,
+				AE4AA3421C76F35200795B27 /* UPHTTPClient.m */,
+				AE4AA3431C76F35200795B27 /* UPMultipartBody.h */,
+				AE4AA3441C76F35200795B27 /* UPMultipartBody.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4AA3161C76F1DA00795B27 /* UpYunFusionSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4AA32E1C76F1DA00795B27 /* Build configuration list for PBXNativeTarget "UpYunFusionSDKDemo" */;
+			buildPhases = (
+				B5576AE9641EC3BBBB442F99 /* Check Pods Manifest.lock */,
+				AE4AA3131C76F1DA00795B27 /* Sources */,
+				AE4AA3141C76F1DA00795B27 /* Frameworks */,
+				AE4AA3151C76F1DA00795B27 /* Resources */,
+				4FE82A3585756CA3CDB97632 /* Embed Pods Frameworks */,
+				9A5DAA55F73043F73EEC9E10 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpYunFusionSDKDemo;
+			productName = UpYunFusionSDKDemo;
+			productReference = AE4AA3171C76F1DA00795B27 /* UpYunFusionSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4AA30F1C76F1DA00795B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = upyun;
+				TargetAttributes = {
+					AE4AA3161C76F1DA00795B27 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = AE4AA3121C76F1DA00795B27 /* Build configuration list for PBXProject "UpYunFusionSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4AA30E1C76F1DA00795B27;
+			productRefGroup = AE4AA3181C76F1DA00795B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4AA3161C76F1DA00795B27 /* UpYunFusionSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4AA3151C76F1DA00795B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4AA32A1C76F1DA00795B27 /* LaunchScreen.storyboard in Resources */,
+				AE4AA3271C76F1DA00795B27 /* Assets.xcassets in Resources */,
+				AE4AA3251C76F1DA00795B27 /* Main.storyboard in Resources */,
+				AE4AA3541C76F3D300795B27 /* image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FE82A3585756CA3CDB97632 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A5DAA55F73043F73EEC9E10 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5576AE9641EC3BBBB442F99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4AA3131C76F1DA00795B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4AA34C1C76F35D00795B27 /* UPMutUploaderManager.m in Sources */,
+				AE4AA3221C76F1DA00795B27 /* ViewController.m in Sources */,
+				AE4AA31F1C76F1DA00795B27 /* AppDelegate.m in Sources */,
+				AE4AA3451C76F35200795B27 /* AliyunUpload.m in Sources */,
+				AE4AA3491C76F35200795B27 /* UPMultipartBody.m in Sources */,
+				AE4AA3521C76F36400795B27 /* NSString+NSHash.m in Sources */,
+				AE4AA3511C76F36400795B27 /* NSData+MD5Digest.m in Sources */,
+				AE4AA31C1C76F1DA00795B27 /* main.m in Sources */,
+				AE4AA3391C76F33500795B27 /* UPYUNConfig.m in Sources */,
+				AE4AA3471C76F35200795B27 /* UPHTTPBodyPart.m in Sources */,
+				AE4AA3381C76F33500795B27 /* UpYun.m in Sources */,
+				AE4AA3461C76F35200795B27 /* QiniuUpload.m in Sources */,
+				AE4AA3481C76F35200795B27 /* UPHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE4AA3231C76F1DA00795B27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4AA3241C76F1DA00795B27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4AA3291C76F1DA00795B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE4AA32C1C76F1DA00795B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE4AA32D1C76F1DA00795B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE4AA32F1C76F1DA00795B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UpYunFusionSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upyun.UpYunFusionSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE4AA3301C76F1DA00795B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UpYunFusionSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upyun.UpYunFusionSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4AA3121C76F1DA00795B27 /* Build configuration list for PBXProject "UpYunFusionSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4AA32C1C76F1DA00795B27 /* Debug */,
+				AE4AA32D1C76F1DA00795B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4AA32E1C76F1DA00795B27 /* Build configuration list for PBXNativeTarget "UpYunFusionSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4AA32F1C76F1DA00795B27 /* Debug */,
+				AE4AA3301C76F1DA00795B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4AA30F1C76F1DA00795B27 /* Project object */;
+}
