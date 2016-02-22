@@ -1,5 +1,9 @@
 # UPYUN Fusion iOS SDK
-[![Build Status](https://travis-ci.org/upyun/ios-fusion-sdk.svg?branch=master)](https://travis-ci.org/upyun/ios-fusion-sdk)
+[![Build Status](https://travis-ci.org/upyun/ios-fusion-sdk.svg)](https://travis-ci.org/upyun/ios-fusion-sdk)
+[![Latest Stable Version](https://img.shields.io/cocoapods/v/UPYUNFusion.svg)](https://github.com/upyun/ios-fusion-sdk/releases)
+![Platform](http://img.shields.io/cocoapods/p/UPYUNFusion.svg)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](License.md)
+
 
 UPYUN Fusion iOS SDK, 集成:
 - [又拍云存储 表单 API接口](http://docs.upyun.com/api/form_api/) 
