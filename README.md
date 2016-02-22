@@ -9,7 +9,9 @@ UPYUN Fusion iOS SDK, 集成:
 
 
 ## 运行环境
-- iOS 7.0 及以上版本, ARC 模式, 采用 NSURLSession 做网络库
+- iOS 7.0 及以上版本, ARC 模式, 采用 NSURLSession 做网络库 
+>注: 因为 iOS 9的ATS, 如果使用七牛的容灾功能, 请将七牛的上传 URL 设置为信任, 可以参考[stackoverflow](http://stackoverflow.com/questions/32755674/ios9-getting-error-an-ssl-error-has-occurred-and-a-secure-connection-to-the-ser)
+
 
 
 ## 使用说明：

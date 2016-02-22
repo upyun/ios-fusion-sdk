@@ -99,9 +99,8 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend {
     if (error) {
         if (_failureBlock) {
             NSError *upError = error;
-            
             if (upError.code < NSURLErrorTimedOut &&
-                upError.code > NSURLErrorZeroByteResource
+                upError.code > NSURLErrorCannotLoadFromNetwork
                 ) {
                 upError = [[NSError alloc] initWithDomain:@"UPHTTPClient" code:500
                                                  userInfo:@{@"message":error.description}];

@@ -26,6 +26,8 @@
 
 - (IBAction)uploadAction:(id)sender {
     [_pv setProgress:0.0];
+    [UPYUNConfig sharedInstance].thirdUpload = kQiniuUpload;
+    [UPYUNConfig sharedInstance].QiniuToken = @"BNvUvcoS4ha7XA3l_WE6YF-6jfsofvDDbbzfCfkm:o1b1B9q0maQWLzU3ar8BBMduCzc=:eyJzY29wZSI6Imxpbmtub3dlYXN5IiwiZGVhZGxpbmUiOjE0NTc4NDg4MTN9";
     
     __block UpYun *uy = [[UpYun alloc] init];
     uy.successBlocker = ^(NSURLResponse *response, id responseData) {
@@ -42,10 +44,6 @@
     uy.progressBlocker = ^(CGFloat percent, int64_t requestDidSendBytes) {
         [_pv setProgress:percent];
     };
-    uy.uploadMethod = UPFormUpload;
-    //    uy.uploadMethod = UPMutUPload;
-    
-    
     
     //    如果 sinature 由服务端生成, 只需要将policy 和 密钥 拼接之后进行MD5, 否则就不用初始化signatureBlocker
     //    uy.signatureBlocker = ^(NSString *policy)

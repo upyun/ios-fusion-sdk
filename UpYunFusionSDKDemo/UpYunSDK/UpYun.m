@@ -30,6 +30,7 @@
         self.mutUploadSize = [UPYUNConfig sharedInstance].DEFAULT_MUTUPLOAD_SIZE;
         self.retryTimes = [UPYUNConfig sharedInstance].DEFAULT_RETRY_TIMES;
         self.uploadMethod = UPFormUpload;
+        self.thirdUpload = [UPYUNConfig sharedInstance].thirdUpload;
     }
     return self;
 }
@@ -103,7 +104,6 @@
                       FilePath:(NSString *)filePath
                        SaveKey:(NSString *)savekey
                     RetryTimes:(NSInteger)retryTimes {
-
     //进度回调
     HttpProgressBlock httpProgress = ^(int64_t completedBytesCount, int64_t totalBytesCount) {
         CGFloat percent = completedBytesCount/(float)totalBytesCount;
@@ -137,9 +137,11 @@
         if (retryTimes > 0 && error.code/100 == 5) {
             [weakSelf formUploadWithFileData:data FilePath:filePath SaveKey:savekey RetryTimes:retryTimes-1];
         } else if (retryTimes == 0 && error.code/100 == 5) {
-            if ([UPYUNConfig sharedInstance].thirdUpload == kQiniuUpload) {
+            NSLog(@" error.code %d", error.code);
+            NSLog(@" error %@", error);
+            if (self.thirdUpload == kQiniuUpload) {
                 [self QiniuUploadFileData:data FilePath:filePath SaveKey:savekey];
-            } else if ([UPYUNConfig sharedInstance].thirdUpload == kAliyunUPload) {
+            } else if (self.thirdUpload == kAliyunUPload) {
                 [self AliyunUploadWithFileData:data FilePath:filePath SaveKey:savekey];
             }
         } else {

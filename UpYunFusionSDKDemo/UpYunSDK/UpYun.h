@@ -53,6 +53,7 @@ typedef NSString*(^UPSignatureBlock)(NSString *policy);
 
 @property (nonatomic, assign) UPUploadMethod uploadMethod;
 
+@property (nonatomic, assign) ThirdUpload thirdUpload;
 /**********************/
 /**以下新增接口 建议使用**/
 /**

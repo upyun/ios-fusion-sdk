@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB9F52F8E121214652AA659044BA8669"
-               BuildableName = "libAliyunOSSiOS.a"
-               BlueprintName = "AliyunOSSiOS"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE4AA3161C76F1DA00795B27"
                BuildableName = "UpYunFusionSDKDemo.app"
                BlueprintName = "UpYunFusionSDKDemo"
@@ -42,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE4AA3581C7ABDA400795B27"
+               BuildableName = "UpYunFusionSDKDemoTests.xctest"
+               BlueprintName = "UpYunFusionSDKDemoTests"
+               ReferencedContainer = "container:UpYunFusionSDKDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AE4AA3161C76F1DA00795B27"
+            BuildableName = "UpYunFusionSDKDemo.app"
+            BlueprintName = "UpYunFusionSDKDemo"
+            ReferencedContainer = "container:UpYunFusionSDKDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -56,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB9F52F8E121214652AA659044BA8669"
-            BuildableName = "libAliyunOSSiOS.a"
-            BlueprintName = "AliyunOSSiOS"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            BlueprintIdentifier = "AE4AA3161C76F1DA00795B27"
+            BuildableName = "UpYunFusionSDKDemo.app"
+            BlueprintName = "UpYunFusionSDKDemo"
+            ReferencedContainer = "container:UpYunFusionSDKDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -74,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB9F52F8E121214652AA659044BA8669"
-            BuildableName = "libAliyunOSSiOS.a"
-            BlueprintName = "AliyunOSSiOS"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            BlueprintIdentifier = "AE4AA3161C76F1DA00795B27"
+            BuildableName = "UpYunFusionSDKDemo.app"
+            BlueprintName = "UpYunFusionSDKDemo"
+            ReferencedContainer = "container:UpYunFusionSDKDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
