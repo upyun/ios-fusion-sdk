@@ -14,20 +14,20 @@
 		AE4AA3251C76F1DA00795B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3231C76F1DA00795B27 /* Main.storyboard */; };
 		AE4AA3271C76F1DA00795B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3261C76F1DA00795B27 /* Assets.xcassets */; };
 		AE4AA32A1C76F1DA00795B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */; };
-		AE4AA3381C76F33500795B27 /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3351C76F33500795B27 /* UpYun.m */; };
-		AE4AA3391C76F33500795B27 /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3371C76F33500795B27 /* UPYUNConfig.m */; };
-		AE4AA3451C76F35200795B27 /* AliyunUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA33C1C76F35200795B27 /* AliyunUpload.m */; };
-		AE4AA3461C76F35200795B27 /* QiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA33E1C76F35200795B27 /* QiniuUpload.m */; };
-		AE4AA3471C76F35200795B27 /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */; };
-		AE4AA3481C76F35200795B27 /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3421C76F35200795B27 /* UPHTTPClient.m */; };
-		AE4AA3491C76F35200795B27 /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3441C76F35200795B27 /* UPMultipartBody.m */; };
-		AE4AA34C1C76F35D00795B27 /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */; };
-		AE4AA3511C76F36400795B27 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */; };
-		AE4AA3521C76F36400795B27 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3501C76F36400795B27 /* NSString+NSHash.m */; };
 		AE4AA3541C76F3D300795B27 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3531C76F3D300795B27 /* image.jpg */; };
 		AE4AA35C1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA35B1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m */; };
 		AE4AA3651C7ADC5700795B27 /* fileTest.file in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3631C7ADC5700795B27 /* fileTest.file */; };
 		AE4AA3661C7ADC5700795B27 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3641C7ADC5700795B27 /* test2.png */; };
+		AE4AA36B1C7AFE5B00795B27 /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3681C7AFE5B00795B27 /* UpYun.m */; };
+		AE4AA36C1C7AFE5B00795B27 /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */; };
+		AE4AA38D1C7AFFA000795B27 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */; };
+		AE4AA38E1C7AFFA000795B27 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */; };
+		AE4AA3931C7B001900795B27 /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */; };
+		AE4AA3941C7B001900795B27 /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3921C7B001900795B27 /* UPHTTPClient.m */; };
+		AE4AA3991C7B002700795B27 /* AliyunUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3961C7B002700795B27 /* AliyunUpload.m */; };
+		AE4AA39A1C7B002700795B27 /* QiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3981C7B002700795B27 /* QiniuUpload.m */; };
+		AE4AA39D1C7B00A000795B27 /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */; };
+		AE4AA3A01C7B00AE00795B27 /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,32 +52,32 @@
 		AE4AA3261C76F1DA00795B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4AA3291C76F1DA00795B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4AA32B1C76F1DA00795B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE4AA3341C76F33500795B27 /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpYun.h; path = UpYunSDK/UpYun.h; sourceTree = "<group>"; };
-		AE4AA3351C76F33500795B27 /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpYun.m; path = UpYunSDK/UpYun.m; sourceTree = "<group>"; };
-		AE4AA3361C76F33500795B27 /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPYUNConfig.h; path = UpYunSDK/UPYUNConfig.h; sourceTree = "<group>"; };
-		AE4AA3371C76F33500795B27 /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPYUNConfig.m; path = UpYunSDK/UPYUNConfig.m; sourceTree = "<group>"; };
-		AE4AA33B1C76F35200795B27 /* AliyunUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AliyunUpload.h; path = UpYunSDK/Utils/AliyunUpload.h; sourceTree = "<group>"; };
-		AE4AA33C1C76F35200795B27 /* AliyunUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AliyunUpload.m; path = UpYunSDK/Utils/AliyunUpload.m; sourceTree = "<group>"; };
-		AE4AA33D1C76F35200795B27 /* QiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUpload.h; path = UpYunSDK/Utils/QiniuUpload.h; sourceTree = "<group>"; };
-		AE4AA33E1C76F35200795B27 /* QiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QiniuUpload.m; path = UpYunSDK/Utils/QiniuUpload.m; sourceTree = "<group>"; };
-		AE4AA33F1C76F35200795B27 /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPBodyPart.h; path = UpYunSDK/Utils/UPHTTPBodyPart.h; sourceTree = "<group>"; };
-		AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPBodyPart.m; path = UpYunSDK/Utils/UPHTTPBodyPart.m; sourceTree = "<group>"; };
-		AE4AA3411C76F35200795B27 /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPClient.h; path = UpYunSDK/Utils/UPHTTPClient.h; sourceTree = "<group>"; };
-		AE4AA3421C76F35200795B27 /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPClient.m; path = UpYunSDK/Utils/UPHTTPClient.m; sourceTree = "<group>"; };
-		AE4AA3431C76F35200795B27 /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMultipartBody.h; path = UpYunSDK/Utils/UPMultipartBody.h; sourceTree = "<group>"; };
-		AE4AA3441C76F35200795B27 /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMultipartBody.m; path = UpYunSDK/Utils/UPMultipartBody.m; sourceTree = "<group>"; };
-		AE4AA34A1C76F35D00795B27 /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMutUploaderManager.h; path = UpYunSDK/Utils/UPMutUpload/UPMutUploaderManager.h; sourceTree = "<group>"; };
-		AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMutUploaderManager.m; path = UpYunSDK/Utils/UPMutUpload/UPMutUploaderManager.m; sourceTree = "<group>"; };
-		AE4AA34D1C76F36400795B27 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MD5Digest.h"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSData+MD5Digest.h"; sourceTree = "<group>"; };
-		AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MD5Digest.m"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSData+MD5Digest.m"; sourceTree = "<group>"; };
-		AE4AA34F1C76F36400795B27 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NSHash.h"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSString+NSHash.h"; sourceTree = "<group>"; };
-		AE4AA3501C76F36400795B27 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NSHash.m"; path = "UpYunSDK/Utils/NSData+MD5Digest/NSString+NSHash.m"; sourceTree = "<group>"; };
 		AE4AA3531C76F3D300795B27 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		AE4AA3591C7ABDA400795B27 /* UpYunFusionSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpYunFusionSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4AA35B1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpYunFusionSDKDemoTests.m; sourceTree = "<group>"; };
 		AE4AA35D1C7ABDA400795B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4AA3631C7ADC5700795B27 /* fileTest.file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileTest.file; sourceTree = "<group>"; };
 		AE4AA3641C7ADC5700795B27 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		AE4AA3671C7AFE5B00795B27 /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYun.h; sourceTree = "<group>"; };
+		AE4AA3681C7AFE5B00795B27 /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYun.m; sourceTree = "<group>"; };
+		AE4AA3691C7AFE5B00795B27 /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPYUNConfig.h; sourceTree = "<group>"; };
+		AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPYUNConfig.m; sourceTree = "<group>"; };
+		AE4AA3891C7AFFA000795B27 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		AE4AA38B1C7AFFA000795B27 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
+		AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
+		AE4AA38F1C7B001900795B27 /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPBodyPart.h; path = Utils/HttpUtils/UPHTTPBodyPart.h; sourceTree = "<group>"; };
+		AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPBodyPart.m; path = Utils/HttpUtils/UPHTTPBodyPart.m; sourceTree = "<group>"; };
+		AE4AA3911C7B001900795B27 /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPClient.h; path = Utils/HttpUtils/UPHTTPClient.h; sourceTree = "<group>"; };
+		AE4AA3921C7B001900795B27 /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPClient.m; path = Utils/HttpUtils/UPHTTPClient.m; sourceTree = "<group>"; };
+		AE4AA3951C7B002700795B27 /* AliyunUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AliyunUpload.h; path = Utils/ThirdUpload/AliyunUpload.h; sourceTree = "<group>"; };
+		AE4AA3961C7B002700795B27 /* AliyunUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AliyunUpload.m; path = Utils/ThirdUpload/AliyunUpload.m; sourceTree = "<group>"; };
+		AE4AA3971C7B002700795B27 /* QiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUpload.h; path = Utils/ThirdUpload/QiniuUpload.h; sourceTree = "<group>"; };
+		AE4AA3981C7B002700795B27 /* QiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QiniuUpload.m; path = Utils/ThirdUpload/QiniuUpload.m; sourceTree = "<group>"; };
+		AE4AA39B1C7B00A000795B27 /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMutUploaderManager.h; path = Utils/UPYUNUpload/UPMutUploaderManager.h; sourceTree = "<group>"; };
+		AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMutUploaderManager.m; path = Utils/UPYUNUpload/UPMutUploaderManager.m; sourceTree = "<group>"; };
+		AE4AA39E1C7B00AE00795B27 /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMultipartBody.h; path = Utils/HttpUtils/UPMultipartBody.h; sourceTree = "<group>"; };
+		AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMultipartBody.m; path = Utils/HttpUtils/UPMultipartBody.m; sourceTree = "<group>"; };
 		AF367AE5128B055C7921A27C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,34 +169,23 @@
 		AE4AA3331C76F30500795B27 /* UpYunSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AE4AA3671C7AFE5B00795B27 /* UpYun.h */,
+				AE4AA3681C7AFE5B00795B27 /* UpYun.m */,
+				AE4AA3691C7AFE5B00795B27 /* UPYUNConfig.h */,
+				AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */,
 				AE4AA33A1C76F33800795B27 /* Utils */,
-				AE4AA3341C76F33500795B27 /* UpYun.h */,
-				AE4AA3351C76F33500795B27 /* UpYun.m */,
-				AE4AA3361C76F33500795B27 /* UPYUNConfig.h */,
-				AE4AA3371C76F33500795B27 /* UPYUNConfig.m */,
 			);
 			name = UpYunSDK;
+			path = ../UpYunSDK;
 			sourceTree = "<group>";
 		};
 		AE4AA33A1C76F33800795B27 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AE4AA34D1C76F36400795B27 /* NSData+MD5Digest.h */,
-				AE4AA34E1C76F36400795B27 /* NSData+MD5Digest.m */,
-				AE4AA34F1C76F36400795B27 /* NSString+NSHash.h */,
-				AE4AA3501C76F36400795B27 /* NSString+NSHash.m */,
-				AE4AA34A1C76F35D00795B27 /* UPMutUploaderManager.h */,
-				AE4AA34B1C76F35D00795B27 /* UPMutUploaderManager.m */,
-				AE4AA33B1C76F35200795B27 /* AliyunUpload.h */,
-				AE4AA33C1C76F35200795B27 /* AliyunUpload.m */,
-				AE4AA33D1C76F35200795B27 /* QiniuUpload.h */,
-				AE4AA33E1C76F35200795B27 /* QiniuUpload.m */,
-				AE4AA33F1C76F35200795B27 /* UPHTTPBodyPart.h */,
-				AE4AA3401C76F35200795B27 /* UPHTTPBodyPart.m */,
-				AE4AA3411C76F35200795B27 /* UPHTTPClient.h */,
-				AE4AA3421C76F35200795B27 /* UPHTTPClient.m */,
-				AE4AA3431C76F35200795B27 /* UPMultipartBody.h */,
-				AE4AA3441C76F35200795B27 /* UPMultipartBody.m */,
+				AE4AA3881C7AFF1B00795B27 /* UPYUNUpload */,
+				AE4AA3871C7AFECB00795B27 /* HttpUtils */,
+				AE4AA3861C7AFEA900795B27 /* ThirdUpload */,
+				AE4AA3851C7AFE9900795B27 /* EncodeUtils */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -208,6 +197,51 @@
 				AE4AA35D1C7ABDA400795B27 /* Info.plist */,
 			);
 			path = UpYunFusionSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		AE4AA3851C7AFE9900795B27 /* EncodeUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3891C7AFFA000795B27 /* NSData+MD5Digest.h */,
+				AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */,
+				AE4AA38B1C7AFFA000795B27 /* NSString+NSHash.h */,
+				AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */,
+			);
+			name = EncodeUtils;
+			path = Utils/EncodeUtlis;
+			sourceTree = "<group>";
+		};
+		AE4AA3861C7AFEA900795B27 /* ThirdUpload */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA3951C7B002700795B27 /* AliyunUpload.h */,
+				AE4AA3961C7B002700795B27 /* AliyunUpload.m */,
+				AE4AA3971C7B002700795B27 /* QiniuUpload.h */,
+				AE4AA3981C7B002700795B27 /* QiniuUpload.m */,
+			);
+			name = ThirdUpload;
+			sourceTree = "<group>";
+		};
+		AE4AA3871C7AFECB00795B27 /* HttpUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA39E1C7B00AE00795B27 /* UPMultipartBody.h */,
+				AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */,
+				AE4AA38F1C7B001900795B27 /* UPHTTPBodyPart.h */,
+				AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */,
+				AE4AA3911C7B001900795B27 /* UPHTTPClient.h */,
+				AE4AA3921C7B001900795B27 /* UPHTTPClient.m */,
+			);
+			name = HttpUtils;
+			sourceTree = "<group>";
+		};
+		AE4AA3881C7AFF1B00795B27 /* UPYUNUpload */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AA39B1C7B00A000795B27 /* UPMutUploaderManager.h */,
+				AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */,
+			);
+			name = UPYUNUpload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,19 +398,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4AA34C1C76F35D00795B27 /* UPMutUploaderManager.m in Sources */,
+				AE4AA3991C7B002700795B27 /* AliyunUpload.m in Sources */,
 				AE4AA3221C76F1DA00795B27 /* ViewController.m in Sources */,
 				AE4AA31F1C76F1DA00795B27 /* AppDelegate.m in Sources */,
-				AE4AA3451C76F35200795B27 /* AliyunUpload.m in Sources */,
-				AE4AA3491C76F35200795B27 /* UPMultipartBody.m in Sources */,
-				AE4AA3521C76F36400795B27 /* NSString+NSHash.m in Sources */,
-				AE4AA3511C76F36400795B27 /* NSData+MD5Digest.m in Sources */,
+				AE4AA39D1C7B00A000795B27 /* UPMutUploaderManager.m in Sources */,
+				AE4AA38E1C7AFFA000795B27 /* NSString+NSHash.m in Sources */,
+				AE4AA3941C7B001900795B27 /* UPHTTPClient.m in Sources */,
+				AE4AA3931C7B001900795B27 /* UPHTTPBodyPart.m in Sources */,
+				AE4AA38D1C7AFFA000795B27 /* NSData+MD5Digest.m in Sources */,
+				AE4AA3A01C7B00AE00795B27 /* UPMultipartBody.m in Sources */,
 				AE4AA31C1C76F1DA00795B27 /* main.m in Sources */,
-				AE4AA3391C76F33500795B27 /* UPYUNConfig.m in Sources */,
-				AE4AA3471C76F35200795B27 /* UPHTTPBodyPart.m in Sources */,
-				AE4AA3381C76F33500795B27 /* UpYun.m in Sources */,
-				AE4AA3461C76F35200795B27 /* QiniuUpload.m in Sources */,
-				AE4AA3481C76F35200795B27 /* UPHTTPClient.m in Sources */,
+				AE4AA36C1C7AFE5B00795B27 /* UPYUNConfig.m in Sources */,
+				AE4AA36B1C7AFE5B00795B27 /* UpYun.m in Sources */,
+				AE4AA39A1C7B002700795B27 /* QiniuUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +614,7 @@
 				AE4AA3621C7ABDA400795B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
