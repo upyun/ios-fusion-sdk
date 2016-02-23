@@ -1,11 +1,11 @@
-# UPYUN Fusion iOS SDK
+# UPYUN iOS Fusion SDK
 [![Build Status](https://travis-ci.org/upyun/ios-fusion-sdk.svg)](https://travis-ci.org/upyun/ios-fusion-sdk)
 [![Latest Stable Version](https://img.shields.io/cocoapods/v/UPYUNFusion.svg)](https://github.com/upyun/ios-fusion-sdk/releases)
 ![Platform](http://img.shields.io/cocoapods/p/UPYUNFusion.svg)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](License.md)
 
 
-UPYUN Fusion iOS SDK, 集成:
+#####UPYUN iOS Fusion SDK, SDK在上传 upyun 服务器失败后会自动备份到第三方存储, 集成:
 - [又拍云存储 表单 API接口](http://docs.upyun.com/api/form_api/) 
 - [又拍云存储 分块上传接口](http://docs.upyun.com/api/multipart_upload/)
 - [七牛云上传功能](http://developer.qiniu.com/docs/v6/api/reference/up/) 
@@ -13,8 +13,9 @@ UPYUN Fusion iOS SDK, 集成:
 
 
 ## 运行环境
-- iOS 7.0 及以上版本, ARC 模式, 采用 NSURLSession 做网络库 
->注: 因为 iOS 9的ATS, 如果使用七牛的容灾功能, 请将七牛的上传 URL 设置为信任, 可以参考[stackoverflow](http://stackoverflow.com/questions/32755674/ios9-getting-error-an-ssl-error-has-occurred-and-a-secure-connection-to-the-ser)
+
+  iOS 7.0 及以上版本, ARC 模式, 采用 NSURLSession 做网络库 
+>注: 因为 iOS 9 的 ATS , 如果碰到 SSL 错误, 请将上传 URL 设置为信任, 可以参考 [stackoverflow](http://stackoverflow.com/questions/32755674/ios9-getting-error-an-ssl-error-has-occurred-and-a-secure-connection-to-the-ser) 和 [iOS 9 AdaptationTips](https://github.com/ChenYilong/iOS9AdaptationTips#1-demo1_ios9%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D_ats%E6%94%B9%E7%94%A8%E6%9B%B4%E5%AE%89%E5%85%A8%E7%9A%84https).
 
 
 
@@ -22,7 +23,7 @@ UPYUN Fusion iOS SDK, 集成:
 1.直接下载, 引入 `UPYUNSDK` 文件夹, 然后 CocoaPods  
         ```pod 'AliyunOSSiOS', '~> 2.2.0'``` , 之后 `#import "UpYun.h"` 即可使用
         
-2.使用cocoapods,  ```pod 'UPYUNFusion', '~> 1.0.0''```, 之后 `#import "UpYun.h"` 即可使用
+2.使用cocoapods,  ```pod 'UPYUNFusion', '~> 1.0.1'```, 之后 `#import "UpYun.h"` 即可使用
 >注: 该项目依赖 AliyunOSSiOS
 
 
@@ -32,8 +33,8 @@ UPYUN Fusion iOS SDK, 集成:
 * `DEFAULT_BUCKET` : 默认空间名（必填项）, 
 * `DEFAULT_PASSCODE` : 默认表单 API 功能密钥 , 用户从服务端获取 `signature` 则无须填写
 * `DEFAULT_EXPIRES_IN` : 默认当前上传授权的过期时间，单位为“秒” （必填项，较大文件需要较长时间)
-* `DEFAULT_RETRY_TIMES` : 失败之后重传次数, 默认2次
-* `SingleBlockSize` : 单个分块大小, 默认500KB
+* `DEFAULT_RETRY_TIMES` : 失败之后重传次数, 默认 2 次
+* `SingleBlockSize` : 单个分块大小, 默认 500 KB
 * `thirdUpload` : 在上传 `upyun` 失败之后, 选择七牛还是阿里云进行容灾上传, `kQiniuUpload` 使用七牛, `kAliyunUPload` , 使用阿里云
 
 * `QiniuToken` : 七牛的上传 `token` , 详细参考[七牛安全机制](http://developer.qiniu.com/docs/v6/api/reference/security/) 
@@ -50,7 +51,7 @@ UPYUN Fusion iOS SDK, 集成:
 
 ## 上传接口
 
-> 详细示例请见 UpYunFusionSDKDemo 的 `Viewcontroller` 。
+> 详细示例请见 UpYunFusionSDKDemo 的 `Viewcontroller` 和 `UpYunFusionSDKDemoTests` 。
 
 ### 文件上传
 

@@ -137,8 +137,6 @@
         if (retryTimes > 0 && error.code/100 == 5) {
             [weakSelf formUploadWithFileData:data FilePath:filePath SaveKey:savekey RetryTimes:retryTimes-1];
         } else if (retryTimes == 0 && error.code/100 == 5) {
-            NSLog(@" error.code %d", error.code);
-            NSLog(@" error %@", error);
             if (self.thirdUpload == kQiniuUpload) {
                 [self QiniuUploadFileData:data FilePath:filePath SaveKey:savekey];
             } else if (self.thirdUpload == kAliyunUPload) {
