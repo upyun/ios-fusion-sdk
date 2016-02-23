@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, UPUploadMethod) {
 
 typedef void(^UPCompeleteBlock)(NSError *error, NSDictionary *result, BOOL completed);
 
-typedef void(^UPSuccessBlock)(NSURLResponse *response, id responseData);
+typedef void(^UPSuccessBlock)(ThirdUpload thirdUpload, NSURLResponse *response, id responseData);
 typedef void(^UPFailBlock)(NSError *error);
 typedef void(^UPProgressBlock)(CGFloat percent, int64_t requestDidSendBytes);
 typedef NSString*(^UPSignatureBlock)(NSString *policy);

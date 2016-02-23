@@ -71,7 +71,14 @@
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
@@ -102,7 +109,14 @@
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
@@ -135,7 +149,14 @@
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"ImageData success %@", responseData);
         NSLog(@"ImageData response %@", response);
         XCTAssertNotNil(response);
@@ -163,7 +184,14 @@
 - (void)testSaveKey {
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
@@ -189,7 +217,7 @@
 - (void)testNoFile {
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     UpYun *uy = [[UpYun alloc]init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
         NSLog(@"response body %@", responseData);
     };
     uy.failBlocker = ^(NSError * error) {
@@ -216,7 +244,7 @@
 - (void)testNoData {
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     UpYun *uy = [[UpYun alloc]init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
         NSLog(@"response body %@", responseData);
     };
     uy.failBlocker = ^(NSError * error) {
@@ -242,13 +270,19 @@
 
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     UpYun *uy = [[UpYun alloc]init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"testWrongBucket success %@", responseData);
         NSLog(@"testWrongBucket response %@", response);
         XCTAssertNotNil(response);
     };
     uy.failBlocker = ^(NSError * error) {
-        NSString *message = [error.userInfo objectForKey:@"message"];
         NSLog(@"testWrongBucket error %@", error);
         XCTAssert(error != nil);
         [expectation fulfill];
@@ -273,13 +307,19 @@
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     UpYun *uy = [[UpYun alloc]init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
     };
     uy.failBlocker = ^(NSError * error) {
-        NSString *message = [error.userInfo objectForKey:@"message"];
         NSLog(@"error %@", error);
         XCTAssert(error != nil);
         [expectation fulfill];
@@ -302,7 +342,14 @@
 - (void)testParams {
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
     UpYun *uy = [[UpYun alloc]init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
@@ -340,14 +387,20 @@
     
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
         [expectation fulfill];
     };
     upyun.failBlocker = ^(NSError * error) {
-        NSString *message = [error.userInfo objectForKey:@"message"];
         NSLog(@"error %@", error);
     };
     upyun.progressBlocker = ^(CGFloat percent, int64_t requestDidSendBytes) {
@@ -379,14 +432,20 @@
     
     UpYun *upyun = [[UpYun alloc]init];
     XCTestExpectation *expectation = [self expectationWithDescription:@"Testing Async Upload!"];
-    upyun.successBlocker = ^(NSURLResponse *response, id responseData) {
+    upyun.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
         NSLog(@"success %@", responseData);
         NSLog(@"response %@", response);
         XCTAssertNotNil(response);
         [expectation fulfill];
     };
     upyun.failBlocker = ^(NSError * error) {
-        NSString *message = [error.userInfo objectForKey:@"message"];
         NSLog(@"error %@", error);
     };
     upyun.progressBlocker = ^(CGFloat percent, int64_t requestDidSendBytes) {

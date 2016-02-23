@@ -5,7 +5,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](License.md)
 
 
-#####UPYUN iOS Fusion SDK, 提供融合云存储功能, 在上传 UPYUN 服务器失败后会自动备份到第三方存储, 集成:
+#####UPYUN iOS Fusion SDK, 提供融合云存储功能, 与 UPYUN 服务器连接不稳定时自动备份到第三方存储, 集成:
 - [又拍云存储 表单 API接口](http://docs.upyun.com/api/form_api/) 
 - [又拍云存储 分块上传接口](http://docs.upyun.com/api/multipart_upload/)
 - [七牛云上传功能](http://developer.qiniu.com/docs/v6/api/reference/up/) 

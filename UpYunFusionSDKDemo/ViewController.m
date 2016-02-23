@@ -27,7 +27,16 @@
     [UPYUNConfig sharedInstance].QiniuToken = @"BNvUvcoS4ha7XA3l_WE6YF-6jfsofvDDbbzfCfkm:o1b1B9q0maQWLzU3ar8BBMduCzc=:eyJzY29wZSI6Imxpbmtub3dlYXN5IiwiZGVhZGxpbmUiOjE0NTc4NDg4MTN9";
     
     __block UpYun *uy = [[UpYun alloc] init];
-    uy.successBlocker = ^(NSURLResponse *response, id responseData) {
+    uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+        
+        if (uploadMethod == kNoneThirdUpload) {
+            NSLog(@"UPYUN upload");
+        } else if (uploadMethod == kQiniuUpload) {
+            NSLog(@"QiniuUpload upload");
+        } else if (uploadMethod == kAliyunUPload) {
+            NSLog(@"AliyunUPload upload");
+        }
+        
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"上传成功" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
         NSLog(@"response body %@", responseData);
@@ -41,6 +50,7 @@
     uy.progressBlocker = ^(CGFloat percent, int64_t requestDidSendBytes) {
         [_pv setProgress:percent];
     };
+    // uy.uploadMethod = UPMutUPload; 分块上传, 默认表单
     
     //    如果 sinature 由服务端生成, 只需要将policy 和 密钥 拼接之后进行MD5, 否则就不用初始化signatureBlocker
     //    uy.signatureBlocker = ^(NSString *policy)
@@ -74,6 +84,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+// 生成随机文件
++ (NSString *)createTempFileWithSize:(NSUInteger)size {
+    NSString *fileName = [NSString stringWithFormat:@"/test%08X.txt", arc4random()];
+    NSURL *fileUrl = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:fileName]];
+    NSData *data = [NSMutableData dataWithLength:size];
+    NSError *error = nil;
+    
+    [data writeToURL:fileUrl options:NSDataWritingAtomic error:&error];
+    
+    return fileUrl.path;
+}
+
++ (void)removeTempfile:(NSString *)filePath {
+    NSError *error = nil;
+    [[NSFileManager defaultManager] removeItemAtPath:filePath error:&error];
 }
 
 @end

@@ -118,7 +118,7 @@
         NSString *message = [jsonDic objectForKey:@"message"];
         if ([@"ok" isEqualToString:message]) {
             if (_successBlocker) {
-                _successBlocker(response, jsonDic);
+                _successBlocker(kNoneThirdUpload, response, jsonDic);
             }
         } else {
             NSError *err = [NSError errorWithDomain:ERROR_DOMAIN
@@ -205,7 +205,7 @@
     [manager uploadWithFile:data OrFilePath: filePath policy:policy signature:signature progressBlock:_progressBlocker completeBlock:^(NSError *error, NSDictionary *result, BOOL completed) {
         if (completed) {
             if (_successBlocker) {
-                _successBlocker(result[@"response"], result[@"responseData"]);
+                _successBlocker(kNoneThirdUpload, result[@"response"], result[@"responseData"]);
             }
         } else {
             if (retryTimes > 0 && error.code/100 == 5) {
@@ -241,7 +241,7 @@
     HttpSuccessBlock httpSuccess = ^(NSURLResponse *response, id responseData) {
         NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:nil];
         if (_successBlocker) {
-            _successBlocker(response, jsonDic);
+            _successBlocker(kNoneThirdUpload, response, jsonDic);
         }
     };
     
@@ -264,7 +264,7 @@
     [qiniu QiniuMutUploadWithFileData:data FilePath:filePath SaveKey:savekey progressBlock:_progressBlocker completeBlock:^(NSError *error, NSDictionary *result, BOOL completed) {
         if (completed) {
             if (_successBlocker) {
-                _successBlocker(result[@"response"], result[@"responseData"]);
+                _successBlocker(kQiniuUpload, result[@"response"], result[@"responseData"]);
             }
         } else {
             if (_failBlocker) {
@@ -282,7 +282,7 @@
         [aliyun AliyunUploadWithFileData:data FilePath:filePath SaveKey:savekey completeBlock:^(NSError *error, NSDictionary *result, BOOL completed) {
             if (completed) {
                 if (_successBlocker) {
-                    _successBlocker(result[@"response"], result[@"responseData"]);
+                    _successBlocker(kAliyunUPload, result[@"response"], result[@"responseData"]);
                 }
             } else {
                 if (_failBlocker) {
@@ -301,7 +301,7 @@
         [aliyun AliyunMutUploadWithFileData:data FilePath:filePath SaveKey:savekey progressBlock:_progressBlocker completeBlock:^(NSError *error, NSDictionary *result, BOOL completed) {
             if (completed) {
                 if (_successBlocker) {
-                    _successBlocker(result[@"response"], result[@"responseData"]);
+                    _successBlocker(kAliyunUPload, result[@"response"], result[@"responseData"]);
                 }
             } else {
                 if (_failBlocker) {
