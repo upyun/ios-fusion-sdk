@@ -5,7 +5,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](License.md)
 
 
-#####UPYUN iOS Fusion SDK, SDK在上传 upyun 服务器失败后会自动备份到第三方存储, 集成:
+#####UPYUN iOS Fusion SDK, 提供融合云存储功能, 在上传 UPYUN 服务器失败后会自动备份到第三方存储, 集成:
 - [又拍云存储 表单 API接口](http://docs.upyun.com/api/form_api/) 
 - [又拍云存储 分块上传接口](http://docs.upyun.com/api/multipart_upload/)
 - [七牛云上传功能](http://developer.qiniu.com/docs/v6/api/reference/up/) 
@@ -23,7 +23,7 @@
 1.直接下载, 引入 `UPYUNSDK` 文件夹, 然后 CocoaPods  
         ```pod 'AliyunOSSiOS', '~> 2.2.0'``` , 之后 `#import "UpYun.h"` 即可使用
         
-2.使用cocoapods,  ```pod 'UPYUNFusion', '~> 1.0.1'```, 之后 `#import "UpYun.h"` 即可使用
+2.使用 CocoaPods ,  ```pod 'UPYUNFusion', '~> 1.0.1'``` , 之后 `#import "UpYun.h"` 即可使用
 >注: 该项目依赖 AliyunOSSiOS
 
 
@@ -35,18 +35,18 @@
 * `DEFAULT_EXPIRES_IN` : 默认当前上传授权的过期时间，单位为“秒” （必填项，较大文件需要较长时间)
 * `DEFAULT_RETRY_TIMES` : 失败之后重传次数, 默认 2 次
 * `SingleBlockSize` : 单个分块大小, 默认 500 KB
-* `thirdUpload` : 在上传 `upyun` 失败之后, 选择七牛还是阿里云进行容灾上传, `kQiniuUpload` 使用七牛, `kAliyunUPload` , 使用阿里云
+* `thirdUpload` :  在上传 `UPYUN` 失败之后, 选择七牛还是阿里云进行容灾上传; `kQiniuUpload` 使用七牛, `kAliyunUPload`  使用阿里云 
 
 * `QiniuToken` : 七牛的上传 `token` , 详细参考[七牛安全机制](http://developer.qiniu.com/docs/v6/api/reference/security/) 
-* 
+ 
 * `AliyunBucket` : 阿里云的 `Bucket`
 * `AliyunAccessKey` : 阿里云的 `AccessKey`
 * `AliyunSecretKey` : 阿里云的 `SecretKey`
 
 
+**注1: 如果使用融合云存储功能，阿里和七牛的配置必选其一**
 
-
-**注意: 如果需要在上传的过程中不断变动一些参数值, 建议初始化 `UpYun` 之后, 通过 `UpYun` 的属性来修改**
+**注2: 如果需要在上传的过程中不断变动一些参数值, 建议初始化 `UpYun` 之后, 通过 `UpYun` 的属性来修改**
 
 
 ## 上传接口
@@ -88,11 +88,8 @@ uy.uploadMethod = UPFormUpload;
 * 由开发者自己生成 saveKey :
   * 比如 `/dir/sample.jpg`表示以`sample.jpg` 为文件名保存到 `/dir` 目录下；
   * 若保存路径为 `/sample.jpg` , 则表示保存到根目录下；
-  * **注意 `saveKey` 的路径必须是以`/`开始的**，下同
-* 由开发者传入关键 `key` 由服务器生成 `saveKey` :
-  * 比如 `/{year}/{mon}/{filename}{.suffix}` 表示以上传文件完成时服务器年 `{year}` 、月 `{mon}` 最为目录，以传入的文件名 `{filename}` 及后缀 `{.suffix}` 作为文件名保存
-  * **特别的** 当参数 `file` 以 `UIImage` 、 `NSData` 类型传入时, `saveKey` 不能带有 `{filename}` 
-  * 其他服务器支持的关键 `key` 详见 [save-key详细说明](http://docs.upyun.com/api/form_api/#_4) 
+  * **注意 `saveKey` 的路径必须是以`/`开始的**
+
 
 #### 3、`successBlocker` 上传成功回调
 * 回调中的参数：
