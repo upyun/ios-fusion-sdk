@@ -57,14 +57,21 @@
 
 ````
 UpYun *uy = [[UpYun alloc] init];
-uy.successBlocker = ^(NSURLResponse *response, id responseData) {
-  //TODO
+uy.successBlocker = ^(ThirdUpload uploadMethod, NSURLResponse *response, id responseData) {
+  	//TODO
+  	if (uploadMethod == kNoneThirdUpload) {
+        NSLog(@"UPYUN upload success");
+    } else if (uploadMethod == kQiniuUpload) {
+        NSLog(@"QiniuUpload upload success");
+    } else if (uploadMethod == kAliyunUPload) {
+        NSLog(@"AliyunUPload upload success");
+    }
 };
 uy.failBlocker = ^(NSError * error) {
-  //TODO
+    //TODO
 };
 uy.progressBlocker = ^(CGFloat percent,long long requestDidSendBytes) {
-  //TODO
+    //TODO
 };
 
 [uy.params setObject:@"value" forKey:@"key"];
