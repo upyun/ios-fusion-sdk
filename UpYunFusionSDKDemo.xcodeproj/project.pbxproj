@@ -7,27 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89330D9F60C9C8233A1B4B58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF367AE5128B055C7921A27C /* libPods.a */; };
+		3E694CC31FCD36A20016C37E /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CA21FCD36A20016C37E /* UPYUNConfig.m */; };
+		3E694CC41FCD36A20016C37E /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CA61FCD36A20016C37E /* UPMutUploaderManager.m */; };
+		3E694CC51FCD36A20016C37E /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CA91FCD36A20016C37E /* NSData+MD5Digest.m */; };
+		3E694CC61FCD36A20016C37E /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CAC1FCD36A20016C37E /* NSString+NSHash.m */; };
+		3E694CC71FCD36A20016C37E /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CAD1FCD36A20016C37E /* UpYun.m */; };
+		3E694CC81FCD36A20016C37E /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CAF1FCD36A20016C37E /* UPHTTPClient.m */; };
+		3E694CC91FCD36A20016C37E /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CB21FCD36A20016C37E /* UPMultipartBody.m */; };
+		3E694CCA1FCD36A20016C37E /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CB41FCD36A20016C37E /* UPHTTPBodyPart.m */; };
+		3E694CCB1FCD36A20016C37E /* UpYunFormUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CB81FCD36A20016C37E /* UpYunFormUploader.m */; };
+		3E694CCC1FCD36A20016C37E /* UpYunBlockUpLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CB91FCD36A20016C37E /* UpYunBlockUpLoader.m */; };
+		3E694CCD1FCD36A20016C37E /* UpYunFileDealManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CBA1FCD36A20016C37E /* UpYunFileDealManger.m */; };
+		3E694CCE1FCD36A20016C37E /* UpSimpleHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CBF1FCD36A20016C37E /* UpSimpleHttpClient.m */; };
+		3E694CCF1FCD36A20016C37E /* UpApiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CC21FCD36A20016C37E /* UpApiUtils.m */; };
+		3E694CD21FCD37B50016C37E /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CD01FCD37B50016C37E /* ViewController2.m */; };
+		3E694CD61FCD3CA60016C37E /* ThirdUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CD51FCD3CA60016C37E /* ThirdUpload.m */; };
+		3E694CDB1FCD3D530016C37E /* QiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CD81FCD3D520016C37E /* QiniuUpload.m */; };
+		3E694CDC1FCD3D530016C37E /* AliyunUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CD91FCD3D530016C37E /* AliyunUpload.m */; };
+		3E694D0F1FCD60030016C37E /* OSSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CE61FCD60030016C37E /* OSSNetworking.m */; };
+		3E694D101FCD60030016C37E /* OSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CE81FCD60030016C37E /* OSSClient.m */; };
+		3E694D111FCD60030016C37E /* OSSHTTPDNSCacheTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CEA1FCD60030016C37E /* OSSHTTPDNSCacheTable.m */; };
+		3E694D121FCD60030016C37E /* OSSHTTPDNSMini.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CEC1FCD60030016C37E /* OSSHTTPDNSMini.m */; };
+		3E694D131FCD60030016C37E /* OSSHTTPDNSOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CED1FCD60030016C37E /* OSSHTTPDNSOrigin.m */; };
+		3E694D141FCD60030016C37E /* OSSHTTPDNSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CEF1FCD60030016C37E /* OSSHTTPDNSTools.m */; };
+		3E694D151FCD60030016C37E /* OSSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CF31FCD60030016C37E /* OSSLog.m */; };
+		3E694D161FCD60030016C37E /* OSSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CF71FCD60030016C37E /* OSSModel.m */; };
+		3E694D171FCD60030016C37E /* OSSCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CF91FCD60030016C37E /* OSSCompat.m */; };
+		3E694D181FCD60030016C37E /* OSSCancellationTokenRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CFC1FCD60030016C37E /* OSSCancellationTokenRegistration.m */; };
+		3E694D191FCD60030016C37E /* OSSBolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CFD1FCD60030016C37E /* OSSBolts.m */; };
+		3E694D1A1FCD60030016C37E /* OSSTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694CFF1FCD60030016C37E /* OSSTaskCompletionSource.m */; };
+		3E694D1B1FCD60030016C37E /* OSSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D001FCD60030016C37E /* OSSTask.m */; };
+		3E694D1C1FCD60030016C37E /* OSSCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D011FCD60030016C37E /* OSSCancellationToken.m */; };
+		3E694D1D1FCD60030016C37E /* OSSCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D091FCD60030016C37E /* OSSCancellationTokenSource.m */; };
+		3E694D1E1FCD60030016C37E /* OSSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D0A1FCD60030016C37E /* OSSExecutor.m */; };
+		3E694D1F1FCD60030016C37E /* OSSXMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D0C1FCD60030016C37E /* OSSXMLDictionary.m */; };
+		3E694D201FCD60030016C37E /* OSSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E694D0D1FCD60030016C37E /* OSSUtil.m */; };
 		AE4AA31C1C76F1DA00795B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA31B1C76F1DA00795B27 /* main.m */; };
 		AE4AA31F1C76F1DA00795B27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */; };
-		AE4AA3221C76F1DA00795B27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3211C76F1DA00795B27 /* ViewController.m */; };
 		AE4AA3251C76F1DA00795B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3231C76F1DA00795B27 /* Main.storyboard */; };
 		AE4AA3271C76F1DA00795B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3261C76F1DA00795B27 /* Assets.xcassets */; };
 		AE4AA32A1C76F1DA00795B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */; };
 		AE4AA3541C76F3D300795B27 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3531C76F3D300795B27 /* image.jpg */; };
-		AE4AA35C1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA35B1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m */; };
 		AE4AA3651C7ADC5700795B27 /* fileTest.file in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3631C7ADC5700795B27 /* fileTest.file */; };
 		AE4AA3661C7ADC5700795B27 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4AA3641C7ADC5700795B27 /* test2.png */; };
-		AE4AA36B1C7AFE5B00795B27 /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3681C7AFE5B00795B27 /* UpYun.m */; };
-		AE4AA36C1C7AFE5B00795B27 /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */; };
-		AE4AA38D1C7AFFA000795B27 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */; };
-		AE4AA38E1C7AFFA000795B27 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */; };
-		AE4AA3931C7B001900795B27 /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */; };
-		AE4AA3941C7B001900795B27 /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3921C7B001900795B27 /* UPHTTPClient.m */; };
-		AE4AA3991C7B002700795B27 /* AliyunUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3961C7B002700795B27 /* AliyunUpload.m */; };
-		AE4AA39A1C7B002700795B27 /* QiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA3981C7B002700795B27 /* QiniuUpload.m */; };
-		AE4AA39D1C7B00A000795B27 /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */; };
-		AE4AA3A01C7B00AE00795B27 /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,45 +63,92 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3E694CA21FCD36A20016C37E /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPYUNConfig.m; sourceTree = "<group>"; };
+		3E694CA31FCD36A20016C37E /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYun.h; sourceTree = "<group>"; };
+		3E694CA41FCD36A20016C37E /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPYUNConfig.h; sourceTree = "<group>"; };
+		3E694CA61FCD36A20016C37E /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMutUploaderManager.m; sourceTree = "<group>"; };
+		3E694CA71FCD36A20016C37E /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMutUploaderManager.h; sourceTree = "<group>"; };
+		3E694CA91FCD36A20016C37E /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		3E694CAA1FCD36A20016C37E /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
+		3E694CAB1FCD36A20016C37E /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		3E694CAC1FCD36A20016C37E /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
+		3E694CAD1FCD36A20016C37E /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYun.m; sourceTree = "<group>"; };
+		3E694CAF1FCD36A20016C37E /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPHTTPClient.m; sourceTree = "<group>"; };
+		3E694CB01FCD36A20016C37E /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMultipartBody.h; sourceTree = "<group>"; };
+		3E694CB11FCD36A20016C37E /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPHTTPBodyPart.h; sourceTree = "<group>"; };
+		3E694CB21FCD36A20016C37E /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMultipartBody.m; sourceTree = "<group>"; };
+		3E694CB31FCD36A20016C37E /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPHTTPClient.h; sourceTree = "<group>"; };
+		3E694CB41FCD36A20016C37E /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPHTTPBodyPart.m; sourceTree = "<group>"; };
+		3E694CB71FCD36A20016C37E /* UpYunUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunUploader.h; sourceTree = "<group>"; };
+		3E694CB81FCD36A20016C37E /* UpYunFormUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYunFormUploader.m; sourceTree = "<group>"; };
+		3E694CB91FCD36A20016C37E /* UpYunBlockUpLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYunBlockUpLoader.m; sourceTree = "<group>"; };
+		3E694CBA1FCD36A20016C37E /* UpYunFileDealManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYunFileDealManger.m; sourceTree = "<group>"; };
+		3E694CBB1FCD36A20016C37E /* UpYunFormUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunFormUploader.h; sourceTree = "<group>"; };
+		3E694CBC1FCD36A20016C37E /* UpYunFileDealManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunFileDealManger.h; sourceTree = "<group>"; };
+		3E694CBD1FCD36A20016C37E /* UpYunBlockUpLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunBlockUpLoader.h; sourceTree = "<group>"; };
+		3E694CBF1FCD36A20016C37E /* UpSimpleHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpSimpleHttpClient.m; sourceTree = "<group>"; };
+		3E694CC01FCD36A20016C37E /* UpApiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpApiUtils.h; sourceTree = "<group>"; };
+		3E694CC11FCD36A20016C37E /* UpSimpleHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpSimpleHttpClient.h; sourceTree = "<group>"; };
+		3E694CC21FCD36A20016C37E /* UpApiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpApiUtils.m; sourceTree = "<group>"; };
+		3E694CD01FCD37B50016C37E /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		3E694CD11FCD37B50016C37E /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		3E694CD41FCD3CA60016C37E /* ThirdUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdUpload.h; sourceTree = "<group>"; };
+		3E694CD51FCD3CA60016C37E /* ThirdUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdUpload.m; sourceTree = "<group>"; };
+		3E694CD71FCD3D520016C37E /* AliyunUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliyunUpload.h; sourceTree = "<group>"; };
+		3E694CD81FCD3D520016C37E /* QiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuUpload.m; sourceTree = "<group>"; };
+		3E694CD91FCD3D530016C37E /* AliyunUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunUpload.m; sourceTree = "<group>"; };
+		3E694CDA1FCD3D530016C37E /* QiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuUpload.h; sourceTree = "<group>"; };
+		3E694CE61FCD60030016C37E /* OSSNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSNetworking.m; sourceTree = "<group>"; };
+		3E694CE71FCD60030016C37E /* OSSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSModel.h; sourceTree = "<group>"; };
+		3E694CE81FCD60030016C37E /* OSSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSClient.m; sourceTree = "<group>"; };
+		3E694CEA1FCD60030016C37E /* OSSHTTPDNSCacheTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSHTTPDNSCacheTable.m; sourceTree = "<group>"; };
+		3E694CEB1FCD60030016C37E /* OSSHTTPDNSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSHTTPDNSTools.h; sourceTree = "<group>"; };
+		3E694CEC1FCD60030016C37E /* OSSHTTPDNSMini.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSHTTPDNSMini.m; sourceTree = "<group>"; };
+		3E694CED1FCD60030016C37E /* OSSHTTPDNSOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSHTTPDNSOrigin.m; sourceTree = "<group>"; };
+		3E694CEE1FCD60030016C37E /* OSSHTTPDNSCacheTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSHTTPDNSCacheTable.h; sourceTree = "<group>"; };
+		3E694CEF1FCD60030016C37E /* OSSHTTPDNSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSHTTPDNSTools.m; sourceTree = "<group>"; };
+		3E694CF01FCD60030016C37E /* OSSHTTPDNSMini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSHTTPDNSMini.h; sourceTree = "<group>"; };
+		3E694CF11FCD60030016C37E /* OSSHTTPDNSOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSHTTPDNSOrigin.h; sourceTree = "<group>"; };
+		3E694CF21FCD60030016C37E /* OSSCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSCompat.h; sourceTree = "<group>"; };
+		3E694CF31FCD60030016C37E /* OSSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSLog.m; sourceTree = "<group>"; };
+		3E694CF41FCD60030016C37E /* OSSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSUtil.h; sourceTree = "<group>"; };
+		3E694CF51FCD60030016C37E /* OSSXMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSXMLDictionary.h; sourceTree = "<group>"; };
+		3E694CF61FCD60030016C37E /* OSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSClient.h; sourceTree = "<group>"; };
+		3E694CF71FCD60030016C37E /* OSSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSModel.m; sourceTree = "<group>"; };
+		3E694CF81FCD60030016C37E /* OSSNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSNetworking.h; sourceTree = "<group>"; };
+		3E694CF91FCD60030016C37E /* OSSCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSCompat.m; sourceTree = "<group>"; };
+		3E694CFA1FCD60030016C37E /* OSSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSLog.h; sourceTree = "<group>"; };
+		3E694CFC1FCD60030016C37E /* OSSCancellationTokenRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSCancellationTokenRegistration.m; sourceTree = "<group>"; };
+		3E694CFD1FCD60030016C37E /* OSSBolts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSBolts.m; sourceTree = "<group>"; };
+		3E694CFE1FCD60030016C37E /* OSSCancellationTokenSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSCancellationTokenSource.h; sourceTree = "<group>"; };
+		3E694CFF1FCD60030016C37E /* OSSTaskCompletionSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSTaskCompletionSource.m; sourceTree = "<group>"; };
+		3E694D001FCD60030016C37E /* OSSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSTask.m; sourceTree = "<group>"; };
+		3E694D011FCD60030016C37E /* OSSCancellationToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSCancellationToken.m; sourceTree = "<group>"; };
+		3E694D021FCD60030016C37E /* OSSExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSExecutor.h; sourceTree = "<group>"; };
+		3E694D031FCD60030016C37E /* OSSBoltsVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSBoltsVersion.h; sourceTree = "<group>"; };
+		3E694D041FCD60030016C37E /* OSSCancellationTokenRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSCancellationTokenRegistration.h; sourceTree = "<group>"; };
+		3E694D051FCD60030016C37E /* OSSBolts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSBolts.h; sourceTree = "<group>"; };
+		3E694D061FCD60030016C37E /* OSSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSDefines.h; sourceTree = "<group>"; };
+		3E694D071FCD60030016C37E /* OSSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSTask.h; sourceTree = "<group>"; };
+		3E694D081FCD60030016C37E /* OSSTaskCompletionSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSTaskCompletionSource.h; sourceTree = "<group>"; };
+		3E694D091FCD60030016C37E /* OSSCancellationTokenSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSCancellationTokenSource.m; sourceTree = "<group>"; };
+		3E694D0A1FCD60030016C37E /* OSSExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSExecutor.m; sourceTree = "<group>"; };
+		3E694D0B1FCD60030016C37E /* OSSCancellationToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSCancellationToken.h; sourceTree = "<group>"; };
+		3E694D0C1FCD60030016C37E /* OSSXMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSXMLDictionary.m; sourceTree = "<group>"; };
+		3E694D0D1FCD60030016C37E /* OSSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSUtil.m; sourceTree = "<group>"; };
+		3E694D0E1FCD60030016C37E /* OSSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSService.h; sourceTree = "<group>"; };
 		AE4AA3171C76F1DA00795B27 /* UpYunFusionSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpYunFusionSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4AA31B1C76F1DA00795B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE4AA31D1C76F1DA00795B27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE4AA3201C76F1DA00795B27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE4AA3211C76F1DA00795B27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE4AA3241C76F1DA00795B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE4AA3261C76F1DA00795B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4AA3291C76F1DA00795B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4AA32B1C76F1DA00795B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4AA3531C76F3D300795B27 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		AE4AA3591C7ABDA400795B27 /* UpYunFusionSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpYunFusionSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4AA35B1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpYunFusionSDKDemoTests.m; sourceTree = "<group>"; };
-		AE4AA35D1C7ABDA400795B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4AA3631C7ADC5700795B27 /* fileTest.file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileTest.file; sourceTree = "<group>"; };
 		AE4AA3641C7ADC5700795B27 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
-		AE4AA3671C7AFE5B00795B27 /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYun.h; sourceTree = "<group>"; };
-		AE4AA3681C7AFE5B00795B27 /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYun.m; sourceTree = "<group>"; };
-		AE4AA3691C7AFE5B00795B27 /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPYUNConfig.h; sourceTree = "<group>"; };
-		AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPYUNConfig.m; sourceTree = "<group>"; };
-		AE4AA3891C7AFFA000795B27 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
-		AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
-		AE4AA38B1C7AFFA000795B27 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
-		AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
-		AE4AA38F1C7B001900795B27 /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPBodyPart.h; path = Utils/HttpUtils/UPHTTPBodyPart.h; sourceTree = "<group>"; };
-		AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPBodyPart.m; path = Utils/HttpUtils/UPHTTPBodyPart.m; sourceTree = "<group>"; };
-		AE4AA3911C7B001900795B27 /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPHTTPClient.h; path = Utils/HttpUtils/UPHTTPClient.h; sourceTree = "<group>"; };
-		AE4AA3921C7B001900795B27 /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPHTTPClient.m; path = Utils/HttpUtils/UPHTTPClient.m; sourceTree = "<group>"; };
-		AE4AA3951C7B002700795B27 /* AliyunUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AliyunUpload.h; path = Utils/ThirdUpload/AliyunUpload.h; sourceTree = "<group>"; };
-		AE4AA3961C7B002700795B27 /* AliyunUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AliyunUpload.m; path = Utils/ThirdUpload/AliyunUpload.m; sourceTree = "<group>"; };
-		AE4AA3971C7B002700795B27 /* QiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUpload.h; path = Utils/ThirdUpload/QiniuUpload.h; sourceTree = "<group>"; };
-		AE4AA3981C7B002700795B27 /* QiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QiniuUpload.m; path = Utils/ThirdUpload/QiniuUpload.m; sourceTree = "<group>"; };
-		AE4AA39B1C7B00A000795B27 /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMutUploaderManager.h; path = Utils/UPYUNUpload/UPMutUploaderManager.h; sourceTree = "<group>"; };
-		AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMutUploaderManager.m; path = Utils/UPYUNUpload/UPMutUploaderManager.m; sourceTree = "<group>"; };
-		AE4AA39E1C7B00AE00795B27 /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPMultipartBody.h; path = Utils/HttpUtils/UPMultipartBody.h; sourceTree = "<group>"; };
-		AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UPMultipartBody.m; path = Utils/HttpUtils/UPMultipartBody.m; sourceTree = "<group>"; };
-		AF367AE5128B055C7921A27C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89330D9F60C9C8233A1B4B58 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,31 +169,186 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00F16445A52A980317628625 /* Frameworks */ = {
+		3E694CA01FCD36A20016C37E /* UpYunSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AF367AE5128B055C7921A27C /* libPods.a */,
+				3E694CA11FCD36A20016C37E /* class_deprecated */,
+				3E694CB51FCD36A20016C37E /* class */,
 			);
-			name = Frameworks;
+			path = UpYunSDK;
 			sourceTree = "<group>";
 		};
-		30F9A84D269CB41EDF7980BE /* Pods */ = {
+		3E694CA11FCD36A20016C37E /* class_deprecated */ = {
 			isa = PBXGroup;
 			children = (
-				5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */,
-				B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */,
+				3E694CA41FCD36A20016C37E /* UPYUNConfig.h */,
+				3E694CA21FCD36A20016C37E /* UPYUNConfig.m */,
+				3E694CA31FCD36A20016C37E /* UpYun.h */,
+				3E694CAD1FCD36A20016C37E /* UpYun.m */,
+				3E694CA51FCD36A20016C37E /* UPMutUpload */,
+				3E694CA81FCD36A20016C37E /* NSData+MD5Digest */,
+				3E694CAE1FCD36A20016C37E /* HttpUtils */,
 			);
-			name = Pods;
+			path = class_deprecated;
+			sourceTree = "<group>";
+		};
+		3E694CA51FCD36A20016C37E /* UPMutUpload */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CA61FCD36A20016C37E /* UPMutUploaderManager.m */,
+				3E694CA71FCD36A20016C37E /* UPMutUploaderManager.h */,
+			);
+			path = UPMutUpload;
+			sourceTree = "<group>";
+		};
+		3E694CA81FCD36A20016C37E /* NSData+MD5Digest */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CAB1FCD36A20016C37E /* NSData+MD5Digest.h */,
+				3E694CA91FCD36A20016C37E /* NSData+MD5Digest.m */,
+				3E694CAA1FCD36A20016C37E /* NSString+NSHash.h */,
+				3E694CAC1FCD36A20016C37E /* NSString+NSHash.m */,
+			);
+			path = "NSData+MD5Digest";
+			sourceTree = "<group>";
+		};
+		3E694CAE1FCD36A20016C37E /* HttpUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CAF1FCD36A20016C37E /* UPHTTPClient.m */,
+				3E694CB01FCD36A20016C37E /* UPMultipartBody.h */,
+				3E694CB11FCD36A20016C37E /* UPHTTPBodyPart.h */,
+				3E694CB21FCD36A20016C37E /* UPMultipartBody.m */,
+				3E694CB31FCD36A20016C37E /* UPHTTPClient.h */,
+				3E694CB41FCD36A20016C37E /* UPHTTPBodyPart.m */,
+			);
+			path = HttpUtils;
+			sourceTree = "<group>";
+		};
+		3E694CB51FCD36A20016C37E /* class */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CD31FCD3C840016C37E /* ThirdUpload */,
+				3E694CB61FCD36A20016C37E /* UpLoader */,
+				3E694CBE1FCD36A20016C37E /* Utils */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		3E694CB61FCD36A20016C37E /* UpLoader */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CB71FCD36A20016C37E /* UpYunUploader.h */,
+				3E694CBB1FCD36A20016C37E /* UpYunFormUploader.h */,
+				3E694CB81FCD36A20016C37E /* UpYunFormUploader.m */,
+				3E694CBD1FCD36A20016C37E /* UpYunBlockUpLoader.h */,
+				3E694CB91FCD36A20016C37E /* UpYunBlockUpLoader.m */,
+				3E694CBC1FCD36A20016C37E /* UpYunFileDealManger.h */,
+				3E694CBA1FCD36A20016C37E /* UpYunFileDealManger.m */,
+			);
+			path = UpLoader;
+			sourceTree = "<group>";
+		};
+		3E694CBE1FCD36A20016C37E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CC11FCD36A20016C37E /* UpSimpleHttpClient.h */,
+				3E694CBF1FCD36A20016C37E /* UpSimpleHttpClient.m */,
+				3E694CC01FCD36A20016C37E /* UpApiUtils.h */,
+				3E694CC21FCD36A20016C37E /* UpApiUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E694CD31FCD3C840016C37E /* ThirdUpload */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CE51FCD60030016C37E /* AliyunOSSiOS */,
+				3E694CD41FCD3CA60016C37E /* ThirdUpload.h */,
+				3E694CD51FCD3CA60016C37E /* ThirdUpload.m */,
+				3E694CD71FCD3D520016C37E /* AliyunUpload.h */,
+				3E694CD91FCD3D530016C37E /* AliyunUpload.m */,
+				3E694CDA1FCD3D530016C37E /* QiniuUpload.h */,
+				3E694CD81FCD3D520016C37E /* QiniuUpload.m */,
+			);
+			name = ThirdUpload;
+			sourceTree = "<group>";
+		};
+		3E694CE51FCD60030016C37E /* AliyunOSSiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CE61FCD60030016C37E /* OSSNetworking.m */,
+				3E694CE71FCD60030016C37E /* OSSModel.h */,
+				3E694CE81FCD60030016C37E /* OSSClient.m */,
+				3E694CE91FCD60030016C37E /* httpdns */,
+				3E694CF21FCD60030016C37E /* OSSCompat.h */,
+				3E694CF31FCD60030016C37E /* OSSLog.m */,
+				3E694CF41FCD60030016C37E /* OSSUtil.h */,
+				3E694CF51FCD60030016C37E /* OSSXMLDictionary.h */,
+				3E694CF61FCD60030016C37E /* OSSClient.h */,
+				3E694CF71FCD60030016C37E /* OSSModel.m */,
+				3E694CF81FCD60030016C37E /* OSSNetworking.h */,
+				3E694CF91FCD60030016C37E /* OSSCompat.m */,
+				3E694CFA1FCD60030016C37E /* OSSLog.h */,
+				3E694CFB1FCD60030016C37E /* OSSTask */,
+				3E694D0C1FCD60030016C37E /* OSSXMLDictionary.m */,
+				3E694D0D1FCD60030016C37E /* OSSUtil.m */,
+				3E694D0E1FCD60030016C37E /* OSSService.h */,
+			);
+			path = AliyunOSSiOS;
+			sourceTree = "<group>";
+		};
+		3E694CE91FCD60030016C37E /* httpdns */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CEA1FCD60030016C37E /* OSSHTTPDNSCacheTable.m */,
+				3E694CEB1FCD60030016C37E /* OSSHTTPDNSTools.h */,
+				3E694CEC1FCD60030016C37E /* OSSHTTPDNSMini.m */,
+				3E694CED1FCD60030016C37E /* OSSHTTPDNSOrigin.m */,
+				3E694CEE1FCD60030016C37E /* OSSHTTPDNSCacheTable.h */,
+				3E694CEF1FCD60030016C37E /* OSSHTTPDNSTools.m */,
+				3E694CF01FCD60030016C37E /* OSSHTTPDNSMini.h */,
+				3E694CF11FCD60030016C37E /* OSSHTTPDNSOrigin.h */,
+			);
+			path = httpdns;
+			sourceTree = "<group>";
+		};
+		3E694CFB1FCD60030016C37E /* OSSTask */ = {
+			isa = PBXGroup;
+			children = (
+				3E694CFC1FCD60030016C37E /* OSSCancellationTokenRegistration.m */,
+				3E694CFD1FCD60030016C37E /* OSSBolts.m */,
+				3E694CFE1FCD60030016C37E /* OSSCancellationTokenSource.h */,
+				3E694CFF1FCD60030016C37E /* OSSTaskCompletionSource.m */,
+				3E694D001FCD60030016C37E /* OSSTask.m */,
+				3E694D011FCD60030016C37E /* OSSCancellationToken.m */,
+				3E694D021FCD60030016C37E /* OSSExecutor.h */,
+				3E694D031FCD60030016C37E /* OSSBoltsVersion.h */,
+				3E694D041FCD60030016C37E /* OSSCancellationTokenRegistration.h */,
+				3E694D051FCD60030016C37E /* OSSBolts.h */,
+				3E694D061FCD60030016C37E /* OSSDefines.h */,
+				3E694D071FCD60030016C37E /* OSSTask.h */,
+				3E694D081FCD60030016C37E /* OSSTaskCompletionSource.h */,
+				3E694D091FCD60030016C37E /* OSSCancellationTokenSource.m */,
+				3E694D0A1FCD60030016C37E /* OSSExecutor.m */,
+				3E694D0B1FCD60030016C37E /* OSSCancellationToken.h */,
+			);
+			path = OSSTask;
+			sourceTree = "<group>";
+		};
+		9148EAA077C94DD3549CE672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE4AA30E1C76F1DA00795B27 = {
 			isa = PBXGroup;
 			children = (
 				AE4AA3191C76F1DA00795B27 /* UpYunFusionSDKDemo */,
-				AE4AA35A1C7ABDA400795B27 /* UpYunFusionSDKDemoTests */,
 				AE4AA3181C76F1DA00795B27 /* Products */,
-				30F9A84D269CB41EDF7980BE /* Pods */,
-				00F16445A52A980317628625 /* Frameworks */,
+				9148EAA077C94DD3549CE672 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,11 +364,11 @@
 		AE4AA3191C76F1DA00795B27 /* UpYunFusionSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AE4AA3331C76F30500795B27 /* UpYunSDK */,
+				3E694CA01FCD36A20016C37E /* UpYunSDK */,
 				AE4AA31D1C76F1DA00795B27 /* AppDelegate.h */,
 				AE4AA31E1C76F1DA00795B27 /* AppDelegate.m */,
-				AE4AA3201C76F1DA00795B27 /* ViewController.h */,
-				AE4AA3211C76F1DA00795B27 /* ViewController.m */,
+				3E694CD11FCD37B50016C37E /* ViewController2.h */,
+				3E694CD01FCD37B50016C37E /* ViewController2.m */,
 				AE4AA3231C76F1DA00795B27 /* Main.storyboard */,
 				AE4AA3261C76F1DA00795B27 /* Assets.xcassets */,
 				AE4AA3281C76F1DA00795B27 /* LaunchScreen.storyboard */,
@@ -166,84 +389,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE4AA3331C76F30500795B27 /* UpYunSDK */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA3671C7AFE5B00795B27 /* UpYun.h */,
-				AE4AA3681C7AFE5B00795B27 /* UpYun.m */,
-				AE4AA3691C7AFE5B00795B27 /* UPYUNConfig.h */,
-				AE4AA36A1C7AFE5B00795B27 /* UPYUNConfig.m */,
-				AE4AA33A1C76F33800795B27 /* Utils */,
-			);
-			name = UpYunSDK;
-			path = ../UpYunSDK;
-			sourceTree = "<group>";
-		};
-		AE4AA33A1C76F33800795B27 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA3881C7AFF1B00795B27 /* UPYUNUpload */,
-				AE4AA3871C7AFECB00795B27 /* HttpUtils */,
-				AE4AA3861C7AFEA900795B27 /* ThirdUpload */,
-				AE4AA3851C7AFE9900795B27 /* EncodeUtils */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		AE4AA35A1C7ABDA400795B27 /* UpYunFusionSDKDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA35B1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m */,
-				AE4AA35D1C7ABDA400795B27 /* Info.plist */,
-			);
-			path = UpYunFusionSDKDemoTests;
-			sourceTree = "<group>";
-		};
-		AE4AA3851C7AFE9900795B27 /* EncodeUtils */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA3891C7AFFA000795B27 /* NSData+MD5Digest.h */,
-				AE4AA38A1C7AFFA000795B27 /* NSData+MD5Digest.m */,
-				AE4AA38B1C7AFFA000795B27 /* NSString+NSHash.h */,
-				AE4AA38C1C7AFFA000795B27 /* NSString+NSHash.m */,
-			);
-			name = EncodeUtils;
-			path = Utils/EncodeUtlis;
-			sourceTree = "<group>";
-		};
-		AE4AA3861C7AFEA900795B27 /* ThirdUpload */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA3951C7B002700795B27 /* AliyunUpload.h */,
-				AE4AA3961C7B002700795B27 /* AliyunUpload.m */,
-				AE4AA3971C7B002700795B27 /* QiniuUpload.h */,
-				AE4AA3981C7B002700795B27 /* QiniuUpload.m */,
-			);
-			name = ThirdUpload;
-			sourceTree = "<group>";
-		};
-		AE4AA3871C7AFECB00795B27 /* HttpUtils */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA39E1C7B00AE00795B27 /* UPMultipartBody.h */,
-				AE4AA39F1C7B00AE00795B27 /* UPMultipartBody.m */,
-				AE4AA38F1C7B001900795B27 /* UPHTTPBodyPart.h */,
-				AE4AA3901C7B001900795B27 /* UPHTTPBodyPart.m */,
-				AE4AA3911C7B001900795B27 /* UPHTTPClient.h */,
-				AE4AA3921C7B001900795B27 /* UPHTTPClient.m */,
-			);
-			name = HttpUtils;
-			sourceTree = "<group>";
-		};
-		AE4AA3881C7AFF1B00795B27 /* UPYUNUpload */ = {
-			isa = PBXGroup;
-			children = (
-				AE4AA39B1C7B00A000795B27 /* UPMutUploaderManager.h */,
-				AE4AA39C1C7B00A000795B27 /* UPMutUploaderManager.m */,
-			);
-			name = UPYUNUpload;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,12 +396,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4AA32E1C76F1DA00795B27 /* Build configuration list for PBXNativeTarget "UpYunFusionSDKDemo" */;
 			buildPhases = (
-				B5576AE9641EC3BBBB442F99 /* Check Pods Manifest.lock */,
 				AE4AA3131C76F1DA00795B27 /* Sources */,
 				AE4AA3141C76F1DA00795B27 /* Frameworks */,
 				AE4AA3151C76F1DA00795B27 /* Resources */,
-				4FE82A3585756CA3CDB97632 /* Embed Pods Frameworks */,
-				9A5DAA55F73043F73EEC9E10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +438,7 @@
 				TargetAttributes = {
 					AE4AA3161C76F1DA00795B27 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = DCJ5V29KGG;
 					};
 					AE4AA3581C7ABDA400795B27 = {
 						CreatedOnToolsVersion = 7.2;
@@ -345,72 +488,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4FE82A3585756CA3CDB97632 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A5DAA55F73043F73EEC9E10 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5576AE9641EC3BBBB442F99 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AE4AA3131C76F1DA00795B27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4AA3991C7B002700795B27 /* AliyunUpload.m in Sources */,
-				AE4AA3221C76F1DA00795B27 /* ViewController.m in Sources */,
+				3E694CDC1FCD3D530016C37E /* AliyunUpload.m in Sources */,
+				3E694D171FCD60030016C37E /* OSSCompat.m in Sources */,
+				3E694CCE1FCD36A20016C37E /* UpSimpleHttpClient.m in Sources */,
+				3E694D201FCD60030016C37E /* OSSUtil.m in Sources */,
+				3E694D121FCD60030016C37E /* OSSHTTPDNSMini.m in Sources */,
+				3E694D181FCD60030016C37E /* OSSCancellationTokenRegistration.m in Sources */,
 				AE4AA31F1C76F1DA00795B27 /* AppDelegate.m in Sources */,
-				AE4AA39D1C7B00A000795B27 /* UPMutUploaderManager.m in Sources */,
-				AE4AA38E1C7AFFA000795B27 /* NSString+NSHash.m in Sources */,
-				AE4AA3941C7B001900795B27 /* UPHTTPClient.m in Sources */,
-				AE4AA3931C7B001900795B27 /* UPHTTPBodyPart.m in Sources */,
-				AE4AA38D1C7AFFA000795B27 /* NSData+MD5Digest.m in Sources */,
-				AE4AA3A01C7B00AE00795B27 /* UPMultipartBody.m in Sources */,
+				3E694D1A1FCD60030016C37E /* OSSTaskCompletionSource.m in Sources */,
 				AE4AA31C1C76F1DA00795B27 /* main.m in Sources */,
-				AE4AA36C1C7AFE5B00795B27 /* UPYUNConfig.m in Sources */,
-				AE4AA36B1C7AFE5B00795B27 /* UpYun.m in Sources */,
-				AE4AA39A1C7B002700795B27 /* QiniuUpload.m in Sources */,
+				3E694CCD1FCD36A20016C37E /* UpYunFileDealManger.m in Sources */,
+				3E694D1F1FCD60030016C37E /* OSSXMLDictionary.m in Sources */,
+				3E694CC91FCD36A20016C37E /* UPMultipartBody.m in Sources */,
+				3E694D111FCD60030016C37E /* OSSHTTPDNSCacheTable.m in Sources */,
+				3E694CD61FCD3CA60016C37E /* ThirdUpload.m in Sources */,
+				3E694CC71FCD36A20016C37E /* UpYun.m in Sources */,
+				3E694CCF1FCD36A20016C37E /* UpApiUtils.m in Sources */,
+				3E694D1B1FCD60030016C37E /* OSSTask.m in Sources */,
+				3E694CCA1FCD36A20016C37E /* UPHTTPBodyPart.m in Sources */,
+				3E694CC41FCD36A20016C37E /* UPMutUploaderManager.m in Sources */,
+				3E694CCB1FCD36A20016C37E /* UpYunFormUploader.m in Sources */,
+				3E694D141FCD60030016C37E /* OSSHTTPDNSTools.m in Sources */,
+				3E694D1E1FCD60030016C37E /* OSSExecutor.m in Sources */,
+				3E694CC31FCD36A20016C37E /* UPYUNConfig.m in Sources */,
+				3E694D101FCD60030016C37E /* OSSClient.m in Sources */,
+				3E694D0F1FCD60030016C37E /* OSSNetworking.m in Sources */,
+				3E694CC61FCD36A20016C37E /* NSString+NSHash.m in Sources */,
+				3E694CCC1FCD36A20016C37E /* UpYunBlockUpLoader.m in Sources */,
+				3E694CC51FCD36A20016C37E /* NSData+MD5Digest.m in Sources */,
+				3E694D151FCD60030016C37E /* OSSLog.m in Sources */,
+				3E694D1D1FCD60030016C37E /* OSSCancellationTokenSource.m in Sources */,
+				3E694D161FCD60030016C37E /* OSSModel.m in Sources */,
+				3E694D131FCD60030016C37E /* OSSHTTPDNSOrigin.m in Sources */,
+				3E694D191FCD60030016C37E /* OSSBolts.m in Sources */,
+				3E694CD21FCD37B50016C37E /* ViewController2.m in Sources */,
+				3E694CC81FCD36A20016C37E /* UPHTTPClient.m in Sources */,
+				3E694D1C1FCD60030016C37E /* OSSCancellationToken.m in Sources */,
+				3E694CDB1FCD3D530016C37E /* QiniuUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +537,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4AA35C1C7ABDA400795B27 /* UpYunFusionSDKDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,29 +654,45 @@
 		};
 		AE4AA32F1C76F1DA00795B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5318390A80D9AD9B76505613 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DCJ5V29KGG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UpYunFusionSDKDemo/UpYunSDK/class",
+				);
 				INFOPLIST_FILE = UpYunFusionSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upyun.UpYunFusionSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
 		AE4AA3301C76F1DA00795B27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B21C02135BA9CD0E9EFB5F85 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DCJ5V29KGG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UpYunFusionSDKDemo/UpYunSDK/class",
+				);
 				INFOPLIST_FILE = UpYunFusionSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.upyun.UpYunFusionSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

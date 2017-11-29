@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController2.h"//新api接口 demo 页面
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window.rootViewController = [[ViewController2 alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
